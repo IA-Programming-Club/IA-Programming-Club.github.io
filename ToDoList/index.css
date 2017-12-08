@@ -6,6 +6,7 @@ html {
 body {
 	margin: 0;
 	background-color: #2F3B43;
+	overflow: hidden;
 }
 
 h1 {
@@ -21,7 +22,6 @@ img {
 	position: absolute;
 	right: 2.5%;
 	bottom: 6%;
-
 }
 
 #list {
