@@ -1,0 +1,106 @@
+html {
+	font-family: 'Raleway', sans-serif;
+	color: white !important;
+}
+
+body {
+	margin: 0;
+	background-color: #2F3B43;
+}
+
+h1 {
+	margin: auto;
+	font-weight: 300;
+	text-align: center;
+	margin-top: 2.5%;
+	font-size: 300%;
+}
+
+img {
+	height: 30%;
+	position: absolute;
+	right: 2.5%;
+	bottom: 6%;
+
+}
+
+#list {
+	margin: auto;
+	margin-top: -5%;
+	width: 25%;
+	height: 60%;
+	background-color: rgba(0,0,0,0.2);
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#itemList {
+	height: 70%;
+	padding: 10%;
+	overflow: auto;
+}
+
+#form {
+	height: 5%;
+}
+
+#todoInput {
+	margin: auto;
+	padding: 2.5%;
+	display: inline-block;
+	color: white;
+	font-size: 120%;
+	font-weight: 100;
+	font-family: 'Raleway', sans-serif;
+	background-color: rgba(255,255,255,0.05);
+	border: none;
+	border-radius: none;
+	outline: none;
+}
+
+#insert, #clear {
+	font-size: 130%;
+	font-weight: 100;
+	display: inline-block;
+	background-color: rgba(255,255,255,0.2);
+	padding: 2.5%;
+	cursor: pointer;
+
+	-webkit-transition: background-color 0.25s ease;  
+	-moz-transition: background-color 0.25s ease; 
+	-ms-transition: background-color 0.25s ease;
+	transition: background-color 0.25s ease;
+}
+
+#insert:hover, #clear:hover {
+	background-color: rgba(255,255,255,0.3);
+}
+
+#formWrapper {
+	width: 80%;
+	height: 100%;
+	margin: auto;
+}
+
+.item {
+	margin: 0;
+	margin-bottom: 2.5%;
+	padding: 3%;
+	background-color: rgba(255,255,255,0.1);
+	box-shadow: 1px 1px 10px 0px #090909;
+}
+
+#decor {
+	width: 10%;
+	height: 150%;
+	position: absolute;
+	top: -15%;
+	right: 20%;
+
+	background-color: rgba(255,255,255,0.1);
+
+	-webkit-transform: rotate(25deg);
+	-ms-transform: rotate(25deg);
+	transform: rotate(25deg);
+}
