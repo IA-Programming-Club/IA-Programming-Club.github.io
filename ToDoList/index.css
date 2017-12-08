@@ -21,13 +21,14 @@ img {
 	position: absolute;
 	right: 2.5%;
 	bottom: 6%;
+
 }
 
 #list {
 	margin: auto;
 	margin-top: -5%;
-	width: 60%;
-	height: 70%;
+	width: 30%;
+	height: 60%;
 	background-color: rgba(0,0,0,0.2);
 	position: relative;
 	top: 50%;
@@ -36,16 +37,36 @@ img {
 
 #itemList {
 	height: 65%;
-	padding: 5%;
+	padding: 10%;
 	overflow: auto;
 }
 
-.item {
+#form {
+	margin: auto;
+	padding: 0 10% 5% 10%;
+	height: 10%;
+	width: 80%;
+}
+
+#todoInput {
 	display: inline-block;
-	margin: 2.3%;
+	width: 50%;
 	padding: 2.5%;
-	background-color: rgba(255,255,255,0.1);
-	box-shadow: 1px 1px 10px 0px #090909;
+	color: white;
+	font-size: 120%;
+	font-weight: 100;
+	font-family: 'Raleway', sans-serif;
+	background-color: rgba(255,255,255,0.05);
+	border: none;
+	outline: none;
+}
+
+#insert, #clear {
+	margin: 0 2% 0 2%;
+	display: inline-block;
+	font-weight: 100;
+	background-color: rgba(255,255,255,0.2);
+	padding: 2.5%;
 	cursor: pointer;
 
 	-webkit-transition: background-color 0.25s ease;  
@@ -54,28 +75,22 @@ img {
 	transition: background-color 0.25s ease;
 }
 
-.item h4 {
+#insert:hover, #clear:hover {
+	background-color: rgba(255,255,255,0.3);
+}
+
+#formWrapper {
+	width: 100%;
+	height: 100%;
+	display: table;
+}
+
+.item {
 	margin: 0;
-	font-size: 170%;
-	font-weight: 300;
-	pointer-events: none;
-}
-
-.item h5 {
-	margin: 0;
-	font-size: 90%;
-	font-weight: 100;
-	pointer-events: none;
-}
-
-.item p {
-	margin: 7% 0 0 0;
-	font-weight: 300;
-	pointer-events: none;
-}
-
-.item:hover {
-	background-color: rgba(255,255,255,0.2);
+	margin-bottom: 2.5%;
+	padding: 3%;
+	background-color: rgba(255,255,255,0.1);
+	box-shadow: 1px 1px 10px 0px #090909;
 }
 
 #decor {

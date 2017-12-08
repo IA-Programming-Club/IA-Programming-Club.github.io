@@ -1,20 +1,37 @@
-document.getElementById("insert").onclick = function() {
-	var input = document.getElementById("todoInput");
-	var itemList = document.getElementById("itemList");
-	if(input.value === "") {
-		alert("Please type in a task!");
-		return;
+var itemList = [
+	{
+		"name": "To-Do List",
+		"url": "ToDoList",
+		"category": "Beginner",
+		"type": "Demonstration",
+		"session": "Introduction to Web Development"
 	}
-	var p = document.createElement("p");
-	p.className = "item";
-	p.appendChild(document.createTextNode(input.value));
-	itemList.appendChild(p);
-	input.value = "";
+];
+
+for(var i = 0; i < itemList.length; i++) {
+	var container = document.getElementById("itemList");
+	container.appendChild(createItem(itemList[i]));
 }
 
-document.getElementById("clear").onclick = function() {
-	var itemList = document.getElementById("itemList");
-	while(itemList.childNodes.length > 0) {
-		itemList.removeChild(itemList.childNodes[0]);
+function createItem(item) {
+	var d = document.createElement("div");
+	d.className = "item";
+	var h4 = document.createElement("h4");
+	var h5 = document.createElement("h5");
+	var p = document.createElement("p");
+
+	h4.appendChild(document.createTextNode(item.name))
+	h5.appendChild(document.createTextNode(item.category + " " + item.type))	
+	p.appendChild(document.createTextNode("Lesson:"));
+	p.appendChild(document.createElement("br"));
+	p.appendChild(document.createTextNode(item.session));
+
+	d.appendChild(h4);
+	d.appendChild(h5);
+	d.appendChild(p);
+
+	d.onclick = function() {
+		window.location.replace(window.location.href+"/"+item.url);
 	}
+	return d;
 }
