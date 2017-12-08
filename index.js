@@ -31,7 +31,7 @@ function createItem(item) {
 	d.appendChild(p);
 
 	d.onclick = function() {
-		window.location.replace(window.location.href+"/"+item.url);
+		window.location.href += "/" + item.url;
 	}
 	return d;
 }
