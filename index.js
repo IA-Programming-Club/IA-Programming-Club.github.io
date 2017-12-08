@@ -1,7 +1,10 @@
 document.getElementById("insert").onclick = function() {
 	var input = document.getElementById("todoInput");
 	var itemList = document.getElementById("itemList");
-
+	if(input.value === "") {
+		alert("Please type in a task!");
+		return;
+	}
 	var p = document.createElement("p");
 	p.className = "item";
 	p.appendChild(document.createTextNode(input.value));
