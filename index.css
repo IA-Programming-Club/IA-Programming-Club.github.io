@@ -16,6 +16,20 @@ h1 {
 	font-size: 300%;
 }
 
+h2 {
+	margin: auto;
+	padding: 1%;
+	font-weight: 300;
+	font-size: 100%;
+	text-align: center;
+	background-color: rgba(0,0,0,0.1);
+	position: absolute;
+	left: 50%;
+	bottom: 4%;
+
+	transform: translateX(-50%);
+}
+
 img {
 	height: 30%;
 	position: absolute;
